@@ -36,7 +36,10 @@ float operation(float num1, float num2, char oper)
 			return num1 * num2;
 			break;
 		case '/':
+			if(num1>num2)
 			return num1 / num2;
+			else 
+			return num2/num1;
 			break;
 		default:
 			cout << "!!wrong operator!!\nSelect one from the following (+,-,*,/)";
